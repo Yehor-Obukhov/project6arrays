@@ -21,7 +21,7 @@ public class arraysynt   {
 
         // Set and access array elements by index
         fixedArray[4] = 45;
-        System.out.println("5th element value: " + fixedArray[4]);
+        System.out.println("5th value: " + fixedArray[4]);
 
         // Iterate over array (array traversal)
         for (int i = 0; i < literalArray.length; i++) {
