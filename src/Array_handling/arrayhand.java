@@ -8,7 +8,7 @@ public class arrayhand {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // Part 2.1 & 2.4: User Input Array and Sum calculation
+        // Part 2.1 & 2.4
         System.out.print("Enter length for user array: ");
         int userLen = scanner.nextInt();
         int[] userArr = inputArray(userLen);
@@ -20,7 +20,7 @@ public class arrayhand {
         }
         System.out.println("Sum of array elements: " + sum);
 
-        // Part 2.2 & 2.5: Random Array and Max Search
+        // Part 2.2 & 2.5
         System.out.print("Enter length for random array: ");
         int randLen = scanner.nextInt();
         int[] randArr = createRandomArray(randLen);
@@ -36,7 +36,7 @@ public class arrayhand {
             System.out.println("Largest value in random array: " + maxVal);
         }
 
-        // Part 2.6: Search Value in Array
+        // Part 2.6
         System.out.print("\nEnter value to search in random array: ");
         int searchValue = scanner.nextInt();
         int foundIndex = searchArray(randArr, searchValue);
@@ -47,7 +47,7 @@ public class arrayhand {
         }
     }
 
-    // Part 2.1: Input Array Method
+    // Part 2.1
     public static int[] inputArray(int length) {
         int[] arr = new int[length];
         for (int i = 0; i < length; i++) {
@@ -57,7 +57,7 @@ public class arrayhand {
         return arr;
     }
 
-    // Part 2.2: Create an array with random values method
+    // Part 2.2
     public static int[] createRandomArray(int length) {
         int[] arr = new int[length];
         Random rnd = new Random();
@@ -67,7 +67,7 @@ public class arrayhand {
         return arr;
     }
 
-    // Part 2.3: Print Array Method
+    // Part 2.3
     public static void printArray(int[] array) {
         System.out.print("Array contents: [ ");
         for (int i = 0; i < array.length; i++) {
@@ -76,7 +76,7 @@ public class arrayhand {
         System.out.println(" ]");
     }
 
-    // Part 2.6: Search value in array method
+    // Part 2.6
     public static int searchArray(int[] array, int searchValue) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == searchValue) {
