@@ -37,7 +37,7 @@ public class arrayhand {
         }
 
         // Part 2.6
-        System.out.print("\nEnter value to search in random array: ");
+        System.out.print("Enter value to search in random array: ");
         int searchValue = scanner.nextInt();
         int foundIndex = searchArray(randArr, searchValue);
         if (foundIndex != -1) {
