@@ -24,25 +24,20 @@ public class arraysynt   {
         System.out.println("5th element value: " + fixedArray[4]);
 
         // Iterate over array (array traversal)
-        System.out.println("\n--- Traversing literalArray with for loop ---");
         for (int i = 0; i < literalArray.length; i++) {
             System.out.println("Element at index " + i + ": " + literalArray[i]);
         }
-
-        System.out.println("\n--- Traversing stringArray with enhanced for loop ---");
+        // String array
         for (String str : stringArray) {
-            System.out.println("Language/Word: " + str);
+            System.out.println("Language: " + str);
         }
-
-        System.out.println("\n--- Traversing boolArray with while loop ---");
+        // Boolean array
         int index = 0;
         while (index < boolArray.length) {
-            System.out.println("Bool element [" + index + "]: " + boolArray[index]);
+            System.out.println("Bool [" + index + "]: " + boolArray[index]);
             index++;
         }
         // Demonstrate error of accessing array element by non-existing index
-        System.out.println("\n--- Demonstrating ArrayIndexOutOfBoundsException ---");
-        System.out.println("Trying to access index 1000...");
-        int errorTrigger = fixedArray[1000]; // This line throws ArrayIndexOutOfBoundsException
+        int errorTrigger = fixedArray[1000];
     }
 }
