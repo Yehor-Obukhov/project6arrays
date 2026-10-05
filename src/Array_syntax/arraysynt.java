@@ -4,7 +4,7 @@ public class arraysynt   {
 
     public static void main(String[] args) {
 
-        // Part 1. Syntax: Demonstration of array creation
+        // Part 1 Demonstration of array creation
         int[] fixedArray = new int[10];
 
         int dynamicSize = 5;
