@@ -35,7 +35,7 @@ public class Contacts {
                     break;
 
                 case "2":
-                    System.out.println("\n--- List of Contacts ---");
+                    System.out.println(" List of Contacts ");
                     if (count == 0) {
                         System.out.println("No contacts stored yet.");
                     } else {
@@ -64,7 +64,7 @@ public class Contacts {
                     System.out.print("Enter contact number to edit (1 to " + count + "): ");
                     try {
                         int userNum = Integer.parseInt(scanner.nextLine());
-                        int editIdx = userNum - 1; // Convert 1-based number to 0-based array index
+                        int editIdx = userNum - 1;
 
                         if (editIdx >= 0 && editIdx < count) {
                             System.out.println("Current value: " + contacts[editIdx]);
